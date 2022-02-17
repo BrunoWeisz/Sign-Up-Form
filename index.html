@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sing Up Form</title>
+</head>
+<body>
+    <div class="left">
+        <div class="logo-container">
+            <img src="./resources/logo.png" alt="logo" class="logo">
+            <h1>Filiel</h1>
+        </div>
+        <footer>Photo by nose</footer>
+    </div>
+    <div class="right">
+        <h4>Yo want to do this, I promise. Sign in and you won't regret it.</h4>
+        <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form action="POST" id ='login'>
+                <div class="form-field">
+                    <label for="first-name">
+                        FIRST NAME
+                    </label>
+                    <input type="text" id = "first-name" autofocus required placeholder="Horacio">
+                </div>
+                <div class="form-field">
+                    <label for="last-name">
+                        LAST NAME
+                    </label>
+                    <input type="text" id="last-name" required placeholder="Marquez">
+                </div>
+                <div class="form-field">
+                    <label for="mail">
+                        EMAIL
+                    </label>
+                    <input type="mail" id="mail" required placeholder="horaciomarquez@wii.com">
+                </div>
+                <div class="form-field">
+                    <label for="phone-number">
+                        PHONE NUMBER
+                    </label>
+                    <input type="tel" id="phone-number">
+                </div>
+                <div class="form-field">
+                    <label for="password">
+                        PASSWORD
+                    </label>
+                    <input type="password" id="password" required placeholder="**********">
+                </div>
+                <div class="form-field">
+                    <label for="password-confirm">
+                        CONFIRM PASSWORD
+                    </label>
+                    <input type="password" id="password-confirm" required placeholder="**********">
+                </div>
+            </form>
+        </div>
+        <div class="submit">
+            <input type="submit" form= 'login' value='Create Account'>
+            <!-- <button type= "submit">Create Account</button> -->
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
