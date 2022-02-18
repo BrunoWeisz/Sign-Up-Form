@@ -6,8 +6,8 @@ html,body{
     padding: 0;
     margin: 0;
     border-width: 0;
-    
 }
+
 
 .left,.right{
     height: 100%;
@@ -20,7 +20,8 @@ html,body{
     position: relative;
 
     background-image: url('./resources/background.jpg');
-    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 .logo-container{
@@ -67,7 +68,8 @@ footer{
     background-color: rgb(243, 243, 246);
 }
 
-h4{
+.dissapear{
+    flex-shrink: 5;
     font-size: 30px;
     margin-left: 20px;
 }
@@ -76,17 +78,17 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    flex-shrink: 1;
     
     /* margin-bottom: 50px; */
     padding: 30px;
-    gap: 50px;
+    /* gap: 50px; */
 
     background-color: white;
     
 }
 
-.form-container:hover{
+.form-container:focus-within{
     box-shadow: 10px 5px 5px gray;
     margin-left: -5px;
     padding-left: 35px;
@@ -95,7 +97,7 @@ h4{
 
 form{
     display: flex;
-    gap: 50px;
+    gap: clamp(20px,20% ,50px);
     flex-wrap: wrap;
 }
 
@@ -112,7 +114,7 @@ input{
     height: 30px;
     
     padding: 5px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-size: medium;
 }
 
@@ -128,7 +130,9 @@ input:focus{
 }
 
 .submit{
-    margin: 30px;
+    flex-shrink: 2;
+    margin-left: min(30px, 10%);
+    margin-top: min(30px, 10%);
 }
 
 input[type='submit']{
